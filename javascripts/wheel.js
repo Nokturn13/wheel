@@ -147,7 +147,7 @@ var wheel = {
       wheel.timerHandle = 0;
       wheel.angleDelta = 0;
 
-      const audio = new Audio('C:/Users/Adrian/Altro/Siti/random/wheel/javascripts/Cristiano-Ronaldo-Siuuu-Sound-Effect.mp3');
+      const audio = new Audio('./javascripts/Cristiano-Ronaldo-Siuuu-Sound-Effect.mp3');
       audio.play();
 
       $('#counter').html((wheel.frames / duration * 1000) + ' FPS');
