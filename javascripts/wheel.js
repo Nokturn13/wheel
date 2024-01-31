@@ -104,7 +104,7 @@ var wheel = {
   segments: [],
   size: 290,
   spinStart: 0,
-  timerDelay: 33,
+  timerDelay: 50,
   timerHandle: 0,
   upTime: 1000,
 
@@ -146,6 +146,9 @@ var wheel = {
       clearInterval(wheel.timerHandle);
       wheel.timerHandle = 0;
       wheel.angleDelta = 0;
+
+      const audio = new Audio('C:/Users/Adrian/Altro/Siti/random/wheel/javascripts/Cristiano-Ronaldo-Siuuu-Sound-Effect.mp3');
+      audio.play();
 
       $('#counter').html((wheel.frames / duration * 1000) + ' FPS');
     }
